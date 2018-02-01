@@ -1,0 +1,47 @@
+body {
+ margin: auto;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 16px;
+}
+
+main {
+    height: 100vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 10px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* #img_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+
+.gallery {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    margin: 5px;
+    width: 236px;
+}
+
+/* mobile */
+@media screen and (max-width: 500px) {
+    main {
+        flex-direction: row;
+
+    }
+
+}
